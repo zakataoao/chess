@@ -1,0 +1,185 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: 'Comfortaa', cursive
+.container
+  width: 85%px
+  margin: 0 auto
+.hide
+  display: none !important
+.header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  padding: 10px
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2)
+  background-color: rgba(255, 255, 255, .15)
+  backdrop-filter: blur(5px)
+  &_reverse
+    top: auto !important
+    bottom: 0 !important
+    transform: rotate(180deg)
+  &__nav
+
+  &__ul
+    display: flex
+    list-style-type: none
+    width: 95%
+    margin: 0 auto
+    justify-content: space-around
+  &__li
+  &__link
+    text-transform: uppercase
+    text-decoration: none
+    font-weight: 700
+    color: #dbdbdb
+    transition: .5s
+    &:hover
+      color: #ffffff
+.main
+  width: 100%
+  height: 100vh
+  background: no-repeat center/cover url('./img/background.webp')
+.container
+.wrapp
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  height: 85%
+  width: 95%
+.btn
+  position: relative
+  width: 100%
+  height: 47%
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2)
+  background-color: rgba(255, 255, 255, .15)
+  backdrop-filter: blur(5px)
+  padding: 60px
+  margin: 0 auto
+
+  color: #fff
+  font-size: 30px
+  text-align: center
+  font-weight: 700
+  transition: .2s
+  &:hover
+    box-shadow: 0 0 1rem 0 #000000
+.firstBtn
+  transform: rotate(180deg)
+.stopBtn
+  width: 50px
+  height: 50px
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2)
+  background-color: rgba(255, 255, 255, .15)
+  padding: 13px 17px
+  backdrop-filter: blur(5px)
+  transition: .5s
+  &:hover
+    box-shadow: 0 0 1rem 0 #000000
+.secondBtn
+.wrapp-s
+  display: flex
+  justify-content: space-around
+  width: 190px
+  margin: 10px auto
+.toggle-s
+  padding: 13px 17px !important
+.toggle-t
+  padding: 13px 11px !important
+
+.settings
+  z-index: 15
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  height: 45vh
+  width: 60%
+  padding: 25px
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2)
+  background-color: rgba(255, 255, 255, .15)
+  backdrop-filter: blur(5px)
+  transform: translateY(-160%)
+  transition: all ease 1s
+  &__form
+    display: flex
+    flex-direction: column
+  &__sec
+    margin-top: 35px
+    width: 100%
+    height: 50px
+    outline: none
+    border: none
+    font-size: 17px
+    color: #949494
+    padding-left: 25px
+  &__btn
+    width: 100%
+    height: 50px
+    background-color: #fff
+    font-size: 17px
+    color: #000000
+    text-transform: uppercase
+    cursor: pointer
+    border: none
+    outline: none
+    margin-top: 13px
+    transition: .4s
+    &:hover
+      background-color: #f1f1f1
+      font-weight: 700
+.music
+  width: 50px
+  height: 50px
+  font-size: 17px
+  padding: 13px 11px
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2)
+  background-color: rgba(255, 255, 255, .15)
+  backdrop-filter: blur(5px)
+  transition: .5s
+  &:hover
+    box-shadow: 0 0 1rem 0 #000000
+.menuBtn
+  width: 50px
+  height: 50px
+  font-size: 17px
+  padding: 13px 11px
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2)
+  background-color: rgba(255, 255, 255, .15)
+  backdrop-filter: blur(5px)
+  transition: .5s
+  &:hover
+    box-shadow: 0 0 1rem 0 #000000
+.menu
+  font-size: 25px
+  color: #fff
+.play
+  font-size: 25px
+  color: #fff
+.stop
+  font-size: 25px
+  color: #fff
+.close
+  position: absolute
+  top: 10px
+  color: #fff
+  cursor: pointer
+  right: 15px
+  font-size: 35px
+.active
+  transform: translateY(0)
+@media screen and ( max-width: 800px )
+  .settings
+    height: 70vh
+    width: 100%
+  

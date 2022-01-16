@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d682b8a273.js" crossorigin="anonymous"></script>
+  <title>Timer</title>
+</head>
+<body>
+  <div class="header">
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__li"><a class="header__link" href="https://vk.com/aozakatoa">VK</a></li>
+        <li class="header__li header__sett"><a class="header__link" href="#">Настройки</a></li>
+        <li class="header__li"><a class="header__link" href="https://github.com/zakataoao">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header header_reverse">
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li class="header__li"><a class="header__link" href="https://vk.com/aozakatoa">VK</a></li>
+        <li class="header__li header__sett"><a class="header__link" href="#">Настройки</a></li>
+        <li class="header__li"><a class="header__link" href="https://github.com/zakataoao">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <div class="container">
+      <div class="settings">
+        <div class="close-wrapp">
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="settings__form">
+          <input type="number" class="settings__sec" placeholder="Кол-во секунд">
+          <button class="settings__btn settings__closeMusicBtn">Убрать музыку</button>
+          <button class="settings__btn settings__saveBtn">Сохранить время</button>
+        </div>
+      </div>
+      <div class="wrapp">
+        <div class="firstBtn btn">Время</div>
+        <div class="wrapp-s">
+          <div class="music toggle-f"><i class="fas fa-play play"></i></div>
+          <div class="music toggle-s hide"><i class="fas fa-pause stop"></i></div>
+          <div class="stopBtn toggle-t hide"><i class="fas fa-play play"></i></div>
+          <div class="stopBtn toggle-fo"><i class="fas fa-pause stop"></i></div>
+          <div class="menuBtn"><i class="fas fa-compass menu"></i></div>
+        </div>
+        <div class="secondBtn btn">Время</div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/main.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+</html>
